@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>Some (Very) Basic HTML</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <h1>Some (Very) Basic HTML</h1>
+        <p>
+            Obligatory note: this guide contains some simplifications, half truths and whatnot in service to providing a nicer
+            introduction. You'll probably end up learning things that don't agree with this guide. Trust them, not me.
+        </p>
+        <h2>What actually is a website?</h2>
+        <p>
+            A website is just a very simple document (a lot like Word), formatted in
+            a way that your web browser (chrome, firefox, etc.) understands. <br> 
+
+            It's mostly written in the Hypertext Markup Language (Thanks, 90s!), 
+            otherwise known as <b>HTML</b>.<br> There's also styling - Fonts, colours, 
+            etc. - written in <b>CSS</b> (Cascading Style Sheets), and some scripting, usually
+            with the dumpster fire of a language we call <b>JavaScript</b> 
+            (not to be confused with Java, they're totally different.)
+        </p>
+        <p>
+            Where programs like Microsoft Word hide all the under-the-hood information 
+            behind buttons, menus and pretty pictures, Markup languages have you write 
+            it out yourself. This page, so far, looks like this:
+        </p>
+    
+        <img src=../images/html.jpg>
+
+        <p>
+            All of those little things between <b>angle brackets</b> <code>&lt&gt</code> are HTML <b>tags</b>, and that's how we format websites. 
+            These are the ones you just saw - match them with the picture above and you'll get a good idea how this works:
+        </p>
+        <ul>
+            <li>
+                <code>&lthtml&gt</code>: This is a HTML document - Good to know
+            </li>
+
+            <li>
+                <code>&lthead&gt</code>: This is the bit that your browser and google look at. <code>&lttitle&gt</code>, for
+                example, is what appears in the tab bar at the top of your browser. <br>
+                Ignore the <code>&ltlink&gt</code> for now.
+            </li>
+
+            <li>
+                <code>&lth1&gt</code>: This is a Heading - Level 1 is the biggest, and it goes down to <code>&lth6&gt</code>
+            </li>
+
+            <li>
+                <code>&ltp&gt</code>: This is a paragraph - Just some basic text
+            </li>
+
+            <li>
+                <code>&ltbr&gt</code>: This is a line break - It gives a new line without starting a new paragraph.
+            </li>
+
+            <li>
+                <code>&ltb&gt</code>: This is bold.
+            </li>
+        </ul>
+
+        <h2>How do I write my own?</h2>
+        <h3>Getting the tools</h3>
+        <p>
+            To get started you'll need 2 programs - Something to write your HTML, and something else to look at it. You've already
+            got a web browser to display websites, go you! We just need a <b>plain text editor</b>.<br>
+            Word is not a plain text editor. It uses its own format which is full of rich formatting, pictures, fonts and whatever
+            else that we really don't want. <br>
+            Notepad is a plain text editor, though not a very good one. It will work, but you won't have a great time writing in
+            it.<br>
+            I'm currently writing this in (neo)Vim - It's nearly 25 years old, barely respects the mouse, has no menus, is a pain to
+            learn, and I love it. But I wouldn't recommend it to start. <br>
+            Instead, I'd look at Microsoft't <a href="https://code.visualstudio.com/">Visual Studio Code</a>. It has lots of great
+            features, is a professional tool, and it's pretty friendly to beginners.<br>
+        </p>
+        <h3> Creating a website </h3>
+        <p>
+            Once you've got that installed, open up a new folder (If you don't know where to put it, just leave it on the Desktop
+            for now), and create a file called <code>index.html</code>. This is your <b>homepage</b>, which is what
+            people will see first when they go to your website - Browsers will always look for an <code>index.html</code> when they
+            go somewhere new.
+            Add a <code>&lthtml&gt</code> <b>element</b> to your document:
+                <img src="../images/html-tutorial-1.jpg" alt="A blank file, with just a HTML element">
+            Now open this file in your browser of choice (right-click > open in firefox/chrome/whatever), and you should see a
+            beautiful, blank page. Your first website!
+        </p>
+        <p>
+            Let's add some <b>metadata</b> - data about data, to give everyone some information about our new website. Add a
+            <code>&lthead&gt</code> element inside <code>&lthtml&gt</code>, and create a title:
+            <img src="../images/html-tutorial-2.jpg" alt="The file now has a head element, with a title">
+            Now you'll still see a blank page, but check the tab bar - Your title should appear there.
+            <div class=helpme>Help Me!<br>
+                <p style="text-wrap: nowrap;"> HTML closing tags should have a / at the beginning. </p>
+            </div>
+        </p>
+
+        <h3>Putting something on your website</h3>
+        <p>
+            That's enough metadata for now - Let's get something on the page.<br>
+            For that you'll need a <code>&ltbody&gt</code> element. Everything in <code>&ltbody&gt</code> is what's actually on the
+            page, so feel free to write whatever you like here, using the tags above. Here's mine:
+        </p>
+        <img src="../images/html-tutorial-3.jpg" alt="The final site for this tutorial. It features headings, paragraphs and a list">
+        <p>
+            Which produces:
+        </p>
+        <iframe src="html_intro_demo_page.html" frameborder="0"></iframe>
+    <a href="../index.html">Back Home</a>
+    </body>
+</html>
