@@ -1,0 +1,250 @@
+<html>
+  <head>
+    <title>MacOS - The Grass is Always Browner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>MacOS - The Grass is Always Browner</h1>
+
+    <p>
+      I went to the apple store and picked up a new M3 MacBook Pro a while back,
+      because I knew eventually I'd need to build something for mac, and that M3
+      performance and dedicated graphics did look enticing, but since then, it's
+      sat on the shelf collecting dust because, frankly, for everything I do,
+      Linux has been easier. The grass on my side of the fence is beautiful and
+      green, and over there it doesn't seem so great.
+    </p>
+    <p>
+      But I hear people, both in the real world and online, touting the
+      incredible efficiency and integration of MacOS, and I see some of the
+      people I really look up to, like Brian Kernigan, using them regularly.
+      There must be <em>somethting</em> I'm not seeing that all these people
+      are, so I've decided to dedicate the next (at minimum) few weeks to using
+      exclusively MacOS (as much as possible) - The second monitor is gone
+      (Thanks M3 vs M3 Pro), the desk arrangement is re-arranged, and the Linux
+      laptop is in the back of the cupboard.
+    </p>
+    <p>
+      I decided to factory reset the Mac to get the best new experience I could,
+      and I'm going to bring only the following over from Linux:
+    </p>
+    <ul>
+      <li>My <code>.zshrc</code></li>
+      <li>My neovim config</li>
+      <li>My Security Keys</li>
+    </ul>
+    <p>
+      Everything else will be done from scratch again, MacOS-style. I'll be
+      writing down my thoughts here as we go.
+    </p>
+
+    <h2>Judging MacOS</h2>
+    <p>
+      I'll be judging MacOS mostly by how much it just gets out of the way and
+      lets me work efficiently. For that to happen, the OS needs to:
+    </p>
+    <ul>
+      <li>Work consistently</li>
+      <li>Not annoy me with things I don't want</li>
+      <li>
+        Let me customize things to a pretty significant degree (I want to think
+        about things once, set them up, and never see them again until I want a
+        change)
+      </li>
+    </ul>
+    <p>
+      Windows 10/11, for the record, fails on all three of these pretty
+      spectacularly. It annoys me with AI, notifications, forgets my mouse
+      cursor, doesn't let me change it's behaviour much at all, and really
+      doesn't get out of the way.
+      <br />
+      (It's also not Unix, which means I need WSL to get any real work done.)
+    </p>
+    <p>
+      The various Linux distros I've used generally do pretty well with this -
+      they're not perfect, of course - but they let me customize everything, the
+      package manager lets me get set up much quicker, and with a tiling window
+      manager that I can set up however I want, getting my workspace configured
+      is (maybe not easy, but) a one-time thing.
+    </p>
+
+    <h2>Setup and First Impressions</h2>
+    <p>
+      I factory reset the MacBook and while I was setting it up I took some
+      notes - I had 2 pages before I even saw the desktop. Here's a list of the
+      things that would affect a brand-new user:
+    </p>
+    <ul>
+      <li>
+        First, there's no live environments - Linux distributions generally have
+        a 'try before you buy' desktop on the installer with all the key
+        features so you can see if you like it<br />
+        It's not like I have a choice on the OS for this machine, but it would
+        still be nice.
+      </li>
+      <li>
+        During this setup process, it wouldn't connect to my external monitor.
+        Once again, this would be nice.
+      </li>
+      <li>
+        The accessibility settings seem pretty good, as someone who doesn't need
+        them.<br />
+        I do like the "Not Now" button - It's a lot like the doctor saying "See
+        you again soon!"
+      </li>
+      <li>
+        The Data & Privacy agreement wasn't nearly as egregious as Windows, but
+        I'm used to nothing at all. I accepted this without too much concern.
+      </li>
+      <li>
+        Apple ID was a bit of a hang-up - I would have liked to use this
+        computer without signing in, but I know from experience that it would
+        pester me until I gave in, so I just added my ID here.<br />
+        it wanted me to sign in on my old, geriatric iPad that I read textbooks
+        on, which didn't work - Just send me an email like everyone else,
+        please.
+      </li>
+      <li>User account creation was the same as Linux - No complaints here.</li>
+      <li>
+        I did have an issue where it asked me for the old password to this Mac
+        (I thought I wiped that!), and then didn't accept it because it was the
+        same as the new password. I tried a few authentication methods there and
+        ended up with a white screen, which was fun. I didn't get that fixed
+        until much later (something to do wih end-to-end iCloud files, which I
+        wasn't using anyway)
+      </li>
+    </ul>
+    <p>
+      It's a fine set-up progress, but it's seriously lacking the polish I was
+      expecting. For a device that sells itself as the height of technology, and
+      a seamless tool, its setup did have a few seams. The setup for Ubuntu or
+      Pop!_OS is a bit friendlier, but it is beating Fedora and Windows.<br />
+      The setup was mostly to-the-point, and covered everything it needed to
+      (though turning off all the extra features was a bit of a pain), setting
+      me up with a user account, fingerprint authentication and all those
+      goodies. It didn't need to restart 12 times, but didn't feel as snappy as
+      I was expecting, especially on this hardware.
+    </p>
+
+    <h2>The Desktop - First Impressions</h2>
+    <p>
+      I'll grant that the default desktop looks pretty nice - They pull off the
+      basic top/bottom bar reasonably well, and most important things are
+      accessible from here. I do take issue with the default settings this
+      desktop comes with, however:
+    </p>
+    <ul>
+      <li>
+        The dock has way too many icons<br />
+        the first 75 seconds I spend on this computer shouldn't be spent
+        right-clicking on things I don't want. I don't need a full office suite,
+        a text editor, messages, phone, facetime, settings, the file explorer
+        and an application launcher right here. I especiall don't need messages
+        and phone because I don't have an iPhone, and Apple knows that because I
+        signed in.<br />
+        This massive dock also just makes the desktop look ugly, cluttered, and
+        full instead of new and clean, especially because
+      </li>
+      <li>
+        The screen is set to low-resolution<br />
+        This computer's 3024*1964 screen pretends it's actually the pathetically
+        small 1512*982 (most consumer laptops 5-10 years ago had 1920*1080
+        screens) because the desktop components are illegible at these scales
+        (The MacOS UI isn't scaled alongside the screen density).<br />
+        Everyone else has been doing this for years - I paid for those pixels,
+        let me use them!
+      </li>
+      <li>
+        The mouse is a mess:
+        <ul>
+          <li>
+            The mouse cursor doesn't look too great, and you can't change it.
+          </li>
+          <li>
+            The mouse sensitivity is really low, and acceleration is crazy<br />
+            I can only imagine this is because the Apple mouse uses a sensor
+            from 10 years ago, and if the sensitivity is any higher it's
+            unusable.
+          </li>
+          <li>
+            If I unset "Invert Scrolling" in the mouse settings, it unsets it
+            for the trackpad. WHY?<br />
+            I want my mouse to be one way and the trackpad to be the other,
+            because that's what makes sense to me.
+          </li>
+          <li>
+            The fastest pointer speed is still slower than I would like - Just
+            let me set a number myself.
+          </li>
+        </ul>
+      </li>
+      <li>
+        Connecting my external monitor wasn't fun either:
+        <ul>
+          <li>
+            It seems to think my monitor is 100Hz (it isn't), and when it (by
+            default) uses that it just kills the monitor (generally it needs to
+            be restarted by pulling the power out).<br />
+            The problem is, whenever I connect the monitor, the display settings
+            move over there, which means I can't fix it because the monitor
+            <em>isn't working</em>. There's a landmine sitting in the settings
+            ready to take an hour out of my day.
+          </li>
+          <li>
+            Turns out this MacBook <em>Pro</em> Can't drive 2 external monitors
+            because they didn't see fit to include that on the M3 model - I need
+            the M3 <em>Pro</em> chip to do this (That's not how that works).
+            Note that any decent laptop, including the old Intel Macs and the
+            MacBook Airs can do this, because it's a relatively basic
+            feature.<br />
+            Bye-bye second monitor, I guess.
+          </li>
+          <li>
+            Text everywhere looks extremely blurry on my 4k monitor. This is a
+            problem with MacOS's font rendering not scaling to non-Apple-brand
+            displays, and works perfectly on any other OS.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      There were a few other little niggles, but the above serves my point well
+      enough, I think. There's a real lack of polish here, and coming from my
+      setup on Linux where windows arranged themselves to suit whatever task I
+      was doing and I could get anywhere with one button, it's death by a
+      thousand cuts.<br />
+      To be entirely fair, the Linux setup is as good as it is thanks to a year
+      and a half of tinkering and learning, but I've never seen issues like
+      these anywhere else.
+    </p>
+    <p>
+      I really didn't like the UI at first, but after using the Mac for a while,
+      I've come around to it a bit. It still isn't my favourite, but it gets the
+      job done, and I can generally get where I want to go (more on that later).
+      <br />
+      Having everything just work can be nice too, if a little restrictive, and
+      I do appreciate that the OS does what it does do pretty well, mostly.
+    </p>
+    <h2>First Impressions</h2>
+    <p>
+      That's enough for now. My MacOS experience so far hasn't been great, but
+      I'm willing to keep going with it - I don't have anything urgent at the
+      moment, and I'd like to see if it convinces me over time. There
+      <em>must</em> be something here I'm not seeing.
+    </p>
+    <p>
+      It certainly doesn't "just work" and either MacOS or I will have to do
+      some serious adjusting to be productive, but that's what a learning
+      experience is.<br />
+      I think it's important to try everything you get your hands on, and
+      there's nothing worse than someone who thinks their grass is the greenest
+      because they've never seen anywhere else. Whether I stick with it
+      long-term or not (I'm not optimistic at the moment), I think I'll be
+      grateful for the experience, and having used something different.
+    </p>
+    <a href="mac-just-let-me-use-my-computer.html"
+      >Next: MacOS - Just Let Me Use My Computer!</a
+    >
+  </body>
+</html>
