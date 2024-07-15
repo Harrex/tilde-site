@@ -5,19 +5,17 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
     <h1>MacOS - Just Let Me Use My Computer</h1>
     <p> I've been putting of writing this for quite a while now, but I'm just furious today (I'll explain why a bit
         later), and I've decided that I'm done with using MacOS for serious work. Sure, there are things that 'just
-        work' and there are a couple things that are much easier than on Linux, but it's death by a thousand cuts - and
-        when I try to improve my workflow with programs like yabai (a tiling window manager), raycast and skhd (a
-        shortcut program) it feels like I need to work around so many artificial limitations and systems that just
+        work' and the hardware is seriously impressive, but it's death by a thousand cuts - and
+        when I try to improve my workflow, it feels like I need to work around so many artificial limitations and systems that just
         weren't meant to do what I want them to do. <br /> All this together means that I spend most of my time on this
         computer acutely aware of what kind of computer I'm using - which really isn't a good thing - and not once since
         I started using this laptop almost a month ago have I been able to just sit and work well for any amount of
         time. </p>
 
-    <h1>Where am I coming from?</h1>
+    <h2>Where am I coming from?</h2>
     <p> My home in the digital world is Linux (Arch &amp; Nix btw.), and I use a tiling window manager (Hyprland, if
         you're curious). While most Linux systems have full desktop environments with many of the same features (and a
         couple of the same limitations) of MacOS, my specific brand is a little different - It doesn't have a taskbar or
@@ -25,48 +23,63 @@
         what I tell it to do, exactly when I say to do it. Its configuration is one text file with all the power of the
         terminal, and there's really nothing else in the way. </p>
 
-    <h1>Mac does that, but slower</h1>
+    <h2>Mac does that, but slower</h2>
     <p>
         Let's look at some simple tasks that I do every day, and how I accomplish them on Linux and MacOS:
     </p>
-    <p> Let's say I want to read a website and take some notes. Under Hyprland, I press Super-F and Super-Enter at once
-        (Super is like Command on Mac or the Windows Key) to open firefox and terminal, which have been automatically
-        tiled to each half of the screen. I then open Neovim in my terminal with the <code>v</code> command (aliased),
-        Super-left back to firefox, open my article and get started. That (minus finding the article) takes about 1
-        second, and it's 4 keystrokes. </p>
-    <p> Now let's do the same thing on MacOS. Press Cmd-Space for spotlight and search for firefox (hopefully I don't
-        have it open anywhere else, because it'll tab me over there instead!), and do the same thing for terminal. Now
-        both windows are sitting on top of each other, so I have to tile them. Luckily I only need 2 windows here, so I
-        can mouse over the tiny green button (for a whole second) and <em>wait</em> for the drop-down to tile the
-        windows. Now I enter Neovim the same way and Cmd-tab over to firefox to find my article. That's 18 keystrokes
-        plus a second of hovering with the mouse over a tiny button. It takes a while, and whatever train of thought I
-        had is gone. (Yes, I could have used mission control, but that's just as bad) Notice that I had to worry about
-        whether I had firefox (or the terminal) open anywhere else, and I really had to problem-solve my way through
-        this. </p>
+    <p> Let's say I want to read a website and take some notes: 
+    <ul>
+        <li>Under Hyprland, I press Super-F and Super-Enter at once
+            (Super is like Command on Mac or the Windows Key) to open firefox and terminal, which have been automatically
+            tiled to each half of the screen. I then open Neovim in my terminal with the <code>v</code> command (aliased),
+            Super-left back to firefox, open my article and get started. That (minus finding the article) takes about 1
+            second, and it's 4 keystrokes. </li>
+        <li>Now let's do the same thing on MacOS. Press Cmd-Space for spotlight and search for firefox (hopefully I don't
+            have it open anywhere else, because it'll tab me over there instead!), and do the same thing for terminal. Now
+            both windows are sitting on top of each other, so I have to tile them. Luckily I only need 2 windows here, so I
+            can mouse over the tiny green button (for a whole second) and <em>wait</em> for the drop-down to tile the
+            windows. Now I enter Neovim the same way and Cmd-tab over to firefox to find my article. That's 18 keystrokes
+            plus a second of hovering with the mouse over a tiny button. It takes a while, and whatever train of thought I
+            had is gone. (Yes, I could have used mission control, but that's just as bad) Notice that I had to worry about
+            whether I had firefox (or the terminal) open anywhere else, and I really had to problem-solve my way through
+            this. </li>
+    </ul>
 
     <p> Now I'd like to listen to some music - Let's be charitable to MacOS and say I use a desktop client like Spotify
-        (or Apple Music) rather than a web- or terminal- based one (Mac doesn't have any good way to deal with those).
-        <br> Under Hyprland, I press Super-K, which pops up spotify above whatever else is going on. If it's not open,
-        it opens it. I set my music, and then press Super-K again when I'm done.
+        (or Apple Music) rather than a web- or terminal- based one (Mac doesn't have any good way to deal with those):
+        <ul>
+            <li>
+                Under Hyprland, I press Super-K, which pops up spotify above whatever else is going on. If it's not open,
+                it opens it. I set my music, and then press Super-K again when I'm done.
+            </li>
+            <li>
+                On Mac, I have to remember whether Spotify is already open - If it isn't, press Cmd-space, type Spotify. If it
+                is, then I can find it in the Cmd-tab menu (which means that I have to press tab many times, which is slow). I
+                set my music, then Cmd-Tab back to my terminal. <br> Problem is, now when I go to Cmd-Tab to firefox, it takes
+                me to Spotify, so I have to remember that's going on. 
+            </li>
+        </ul>
     </p>
-    <p> On Mac, I have to remember whether Spotify is already open - If it isn't, press Cmd-space, type Spotify. If it
-        is, then I can find it in the Cmd-tab menu (which means that I have to press tab many times, which is slow). I
-        set my music, then Cmd-Tab back to my terminal. <br> Problem is, now when I go to Cmd-Tab to firefox, it takes
-        me to Spotify, so I have to remember that's going on. </p>
 
-    <p> Now I need a new window on the screen to do something else, say read some earlier notes. Under Hyprland I press
-        Super-Enter to open a new terminal, and get to my file. Automatically the other windows shrink a little to make
-        space and everything is arranged sensibly. To switch windows, I can use Super+{Left, Right, Up, Down}. When I
-        close that, the other windows go back to how they were before. </p>
-    <p> This is where Mac gets painful. Those two windows I had open are in a weird split-fullscreen pseudo-workspace
-        <em>thing</em>, and this can't deal with more than two windows, so tiling's busted. I press the little green
-        button to exit fullscreen, and only one of the windows leaves. I have to Cmd-Tab back to the other one and
-        un-fullscreen that too. Now they're on top of each other. I Cmd-Tab to the terminal and press Cmd-N to get
-        another one (because there's already a terminal open, spotlight would just focus that one), and then
-        <em>manually resize the windows to fit</em>. By the time I'm done with that I've probably forgotten whatever it
-        was I was meant to do, so I'll work that out again and do it. <br> Cmd-Tab also doesn't work very well now
-        because there's two windows of the same type, so I have to decide between Cmd-Tab or Cmd-` depending both on
-        where I am and where I want to be.
+    <p> Now I need a new window on the screen to do something else, say read some earlier notes: 
+    <ul>
+        <li>
+            Under Hyprland I press Super-Enter to open a new terminal, and get to my file. Automatically the other windows shrink a
+            little to make space and everything is arranged sensibly. To switch windows, I can use Super+{Left, Right, Up, Down}.
+            When I close that, the other windows go back to how they were before.
+        </li>
+        <li>
+            This is where Mac gets painful. Those two windows I had open are in a weird split-fullscreen pseudo-workspace
+            <em>thing</em>, and this can't deal with more than two windows, so tiling's busted. I press the little green
+            button to exit fullscreen, and only one of the windows leaves. I have to Cmd-Tab back to the other one and
+            un-fullscreen that too. Now they're on top of each other. I Cmd-Tab to the terminal and press Cmd-N to get
+            another one (because there's already a terminal open, spotlight would just focus that one), and then
+            <em>manually resize the windows to fit</em>. By the time I'm done with that I've probably forgotten whatever it
+            was I was meant to do, so I'll work that out again and do it. <br> Cmd-Tab also doesn't work very well now
+            because there's two windows of the same type, so I have to decide between Cmd-Tab or Cmd-` depending both on
+            where I am and where I want to be.
+        </li>
+    </ul>
     </p>
 
     <p> Need I go on? These things seem like minor inconveniences on their own, but when I do these small tasks
@@ -76,7 +89,7 @@
         poor font rendering (optimised only for Apple's own Retina displays), pointless notifications (Looking at you,
         Tips), and some serious bugs. </p>
 
-    <h1>Mac Does Some Things Really Well, but They Can Be Hard to Find</h1>
+    <h2>Mac Does Some Things Really Well, but They Can Be Hard to Find</h2>
     <p> I've spent a lot of this page ranting about issues with the desktop environment, and I do that because, for me,
         it's the single most important thing about how my computer is set up. As long as it's powerful <em>enough</em>,
         and the battery lasts long <em>enough</em>, and the screen is decent <em>enough</em>, the important thing is how
@@ -87,15 +100,14 @@
         because the Mac desktop doesn't scale its UI components (like buttons and text), actually running the retina
         screen at its full resolution makes Mac unusable. </p>
 
-    <h1>The Apple Ecosystem</h1>
+    <h2>The Apple Ecosystem</h2>
     <p> Even using a Mac, I've been pretty reluctant to enter the 'Apple ecosystem' - I don't use the app store, ever,
         though I do buy music on iTunes occasionally. I can message my iMessage-using friends, though I can't talk to
         Android users, who make up about half of the people I need to talk to (I don't have an iPhone, and I have no
-        intention of getting one), so I really don't care all the interconnected features they advertise. I have an iPad
-        mini 4, and it's "too old", apparently, to join the party. I want my computer to compute, and my phone to talk
-        to other people. </p>
+        intention of getting one), so I really don't care all the interconnected features they advertise. 
+        I want my computer to compute, and my phone to talk to other people, not my computer. </p>
 
-    <h1>It Just Works!</h1>
+    <h2>It Just Works!</h2>
     <p> Finally, we've come to my final straw, and the reason I'm so furious - the bugs. When I turned my computer on
         this afternoon, my external monitor didn't power on. I had this issue when I got the Mac, and I fixed it then -
         the Mac seems to think my monitor is 100Hz instead of 60Hz (not an issue on other devices), but it had forgotten
@@ -118,6 +130,7 @@
     <p>
         For now, back home to Linux, and back to getting things done.
     </p>
+    <a href="../index.html">Back Home</a>
 
 </body>
 
