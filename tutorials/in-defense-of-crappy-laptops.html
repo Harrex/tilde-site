@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>Writing on an Old Laptop</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1>Writing on an Old Laptop</h1>
+
+    <p>
+        As time marches on, the devices we use get thinner, faster, fancier, and (usually) better - and our old stuff
+        starts to
+        really show its age. My 2023 Framework 13 looks and sounds beautiful, boots up in seconds, runs like a dream,
+        and feels
+        pretty good to use, and the old ThinkPad feels a bit pants by comparison, even running the latest software.
+    </p>
+
+    <p>
+        However, with this power comes some real baggage. The keyboard doesn't feel too great, it's a bit thin and
+        flimsy, and
+        there's just a lot going on. The same machine that we write on can watch movies on-demand, can scroll through
+        snapstagram, receives text messages from other people, and <em>dings</em> - The single-purpose gadget is dead,
+        everything talks to everything else, and that's really cool for a lot of things. But when I want to just sit and
+        write, this can be a real problem.
+    </p>
+
+    <p>
+        Yes, we have Focus Modes or Do not Disturb or whatever else, but there's also the mental association - whatever
+        part of
+        the hindbrain knows that this machine can do things that are so much more fun, and when we sit down it's not
+        necessarily
+        clear what the actual goal is to that primitive part of the brain that decides whether we can work right now.
+        Monkey
+        brain doesn't deal with one physical object doing many things, and that's a problem that we haven't really had
+        before. <br>
+
+        On the other hand, at least for me, limiting the device feels like a real waste. Blocking movies or the internet
+        wastes the capabilities
+        of this device that I spent real money on, and why should we do that? Really, I need a little gadget that's just
+        powerful enough to write, but not powerful or pretty enough to do anything more fun.
+    </p>
+
+    <p>
+        Enter the old, broken, dusty, beaten up old Toshiba - Retired years ago but you never had the heart to throw it
+        out, and
+        Windows XP/7/8 is a hazard to connect to the internet and barely runs today. You need to deal with modern things
+        occasionally, but also want to get things done in a minimal environment. <br>
+        It's more than powerful enough to edit text files, though you might feel its age editing a Word Document, and
+        the
+        keyboard is just beautiful - worn down by the years, but still snappy enough to be almost mechanical - The
+        perfect typing machine.
+    </p>
+
+    <h1>Get On With the Tutorial!</h1>
+
+    <p>
+        We'll be using Linux - Whatever you think about it, there's nothing better for getting an old machine up and
+        running in
+        most cases. Every laptop is different, especially these kinds of devices, so you'll probably have some trials
+        and
+        tribulations that I can't cover here. Google is your friend.
+    </p>
+
+    <h2>Arch btw.</h2>
+
+    <p>
+        I'll be using <a href="https://www.archlinux.org">Arch Linux</a> - They advertise themselves as "A Simple,
+        Lightweight
+        Linux Distribution" - the understatement of the century. <br>
+
+        They do have an installer script, but it has some real <em>personality</em>, and I wouldn't trust it on any
+        interesting
+        devices - That means we're doing this install ourselves. Trust me, it's not all bad. <br>
+    </p>
+
+    <h2>The Install - Tips and Tricks</h2>
+    <p>
+        Whatever anyone else (including me) says, you always want to look at the <a
+            href="https://wiki.archlinux.org/title/Installation_guide">Arch Wiki Installation Guide</a> as the final
+        source of truth. It gets updated as Arch changes, and is a fantastic resource, though it can be a little scary. I'll
+        elaborate on some sections that I had trouble with when I was learning.
+    </p>
+
+    <h3>Preparing an Installation Medium</h3>
+    <p> 
+        Head to the downloads page (I won't link it here, because links like that die too quickly), and look for a mirror
+        nearby. I'm in Australia, so the Australian Academic and Resource Network (AARNET) is a good choice for me. Verifying
+        the signatures is a good idea, but if you trust your download source, it's not crazy important for a little project like
+        this. <br>
+
+        Generally, you'll want a USB boot disk for anything relatively modern. Take a look at <a
+            href="https://etcher.balena.io/">Balena Etcher</a> which is very good at flashing images. Pick your file, pick your
+        USB stick (DON'T choose the wrong one, you can wipe your system here), and press the green button.
+    </p>
+
+    <h3>Booting to the Installation Medium</h3>
+    <p>
+        Now you'll need to get the target laptop to boot to a USB stick. Normally when you turn the computer on, it will look at
+        its internal storage for an Operating System, but we'll need to tell it to boot elsewhere.<br />
+
+        You'll need to get into the firmware interface - this is different for every laptop, but try mashing one of ESC, F2,
+        F10, F12 as the laptop is turning on, and see if you get anything interesting (If you don't have any luck, google
+        &lt;Your Laptop&gt; BIOS key). Once you find some kind of menu, you're looking for something like 'Setup Options'. Turn
+        <em>off</em> Secure Boot if you can find it, and set the USB first in the boot order. You can also look for a boot menu,
+        and select the USB that way.
+    </p>
+
+    <p>
+        Once you see something with the Arch Linux logo, go with the first option (<em>Arch Linux Install Medium</em>), and wait
+        for the blinking cursor.
+    </p>
+
+    <h3>Welcome to the Shell!</h3>
+    <p>
+        A good chunk of this process will be on the command line - It's not that scary, but it's probably worth getting some
+        familiarity with it. If you have access to a Mac or Linux devices, it's really worth having a look at Zach Mandeville's
+        wonderful guide, <a href="https://coolguy.website/map-is-the-territory/">The Map is the Territory</a>. It's a bit quirky
+        but it does a great job of introducing this interface.
+    </p>
+
+</body>
+
+</html>
