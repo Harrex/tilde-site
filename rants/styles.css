@@ -19,6 +19,7 @@ body {
     width: 74vw;
     max-width: 1300px;
     margin: 0 auto;
+    padding-bottom: 40vh;
 }
 
 h1 {
@@ -58,7 +59,7 @@ code {
 }
 
 img {
-    display:block;
+    display: block;
     width: 60%;
     background-color: var(--bg-code);
     margin: 10pt auto;
@@ -66,7 +67,7 @@ img {
 }
 
 iframe {
-    display:block;
+    display: block;
     width: 60%;
     height: 200px;
     background-color: white;
@@ -75,7 +76,7 @@ iframe {
 }
 
 .helpme {
-    display:block;
+    display: block;
     width: 80px;
     height: 20px;
     padding: 10px;
@@ -87,7 +88,7 @@ iframe {
 }
 
 .helpme * {
-    display:none;
+    display: none;
     transition-duration: 0.5s;
 }
 
@@ -97,7 +98,7 @@ iframe {
 }
 
 .helpme:hover * {
-    display:unset;
+    display: unset;
 }
 
 ul {
